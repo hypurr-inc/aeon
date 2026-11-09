@@ -1,10 +1,10 @@
 {
   "skill": "hyperliquid-market-monitor",
-  "last_analyzed": "2026-11-09T17:43:08Z",
-  "quality_score": 3,
-  "assessment": "Completed the watch snapshot for HYPE with the 24h move (-2.71%) and funding (-0.001%/h) both above their stated thresholds, but it does not show whether these are newly crossed versus previously reported, and the figures are unsourced.",
+  "last_analyzed": "2026-11-09T17:45:49Z",
+  "quality_score": 4,
+  "assessment": "Completed the watch job correctly: the log line, hit list, thresholds, and no-notify verdict are internally consistent and match a dedup-style no-new-alert run. The 'previously reported' claim depends on prior run state the output does not show, so it is only partly verifiable.",
   "flags": [],
-  "avg_score": 2.33,
+  "avg_score": 2.75,
   "history": [
     {
       "date": "2026-11-09",
@@ -22,6 +22,12 @@
       "date": "2026-11-09",
       "score": 3,
       "ts": "2026-11-09T17:43:08Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-09",
+      "score": 4,
+      "ts": "2026-11-09T17:45:49Z",
       "harness": "claude"
     }
   ]
