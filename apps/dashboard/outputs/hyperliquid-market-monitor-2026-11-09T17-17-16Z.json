@@ -1,0 +1,156 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperliquid watch"
+      },
+      "children": [
+        "grid",
+        "sep1",
+        "table",
+        "sep2",
+        "thresholds"
+      ]
+    },
+    "grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 5,
+        "gap": "md"
+      },
+      "children": [
+        "stat-btc",
+        "stat-eth",
+        "stat-sol",
+        "stat-hype",
+        "stat-xyz"
+      ]
+    },
+    "stat-btc": {
+      "type": "Stat",
+      "props": {
+        "label": "BTC",
+        "value": "74918.5",
+        "delta": "-0.98% 24h",
+        "trend": "down"
+      }
+    },
+    "stat-eth": {
+      "type": "Stat",
+      "props": {
+        "label": "ETH",
+        "value": "2129.85",
+        "delta": "-4.29% 24h",
+        "trend": "down"
+      }
+    },
+    "stat-sol": {
+      "type": "Stat",
+      "props": {
+        "label": "SOL",
+        "value": "86.7925",
+        "delta": "-2.44% 24h",
+        "trend": "down"
+      }
+    },
+    "stat-hype": {
+      "type": "Stat",
+      "props": {
+        "label": "HYPE",
+        "value": "75.3325",
+        "delta": "-1.77% 24h",
+        "trend": "down"
+      }
+    },
+    "stat-xyz": {
+      "type": "Stat",
+      "props": {
+        "label": "xyz:XYZ100",
+        "value": "27877.5",
+        "delta": "3.53% 24h",
+        "trend": "up"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Market",
+          "Price",
+          "24h",
+          "Funding (/h)",
+          "Open interest (USDC)",
+          "24h volume (USDC)"
+        ],
+        "rows": [
+          [
+            "BTC",
+            "74918.5",
+            "-0.98%",
+            "0.0013%",
+            "3,216,343,538",
+            "3,759,035,924"
+          ],
+          [
+            "ETH",
+            "2129.85",
+            "-4.29%",
+            "0.0013%",
+            "1,726,982,080",
+            "2,039,429,371"
+          ],
+          [
+            "SOL",
+            "86.7925",
+            "-2.44%",
+            "-0.0023%",
+            "423,475,308",
+            "447,445,248"
+          ],
+          [
+            "HYPE",
+            "75.3325",
+            "-1.77%",
+            "0.0013%",
+            "1,643,997,037",
+            "697,947,819"
+          ],
+          [
+            "xyz:XYZ100",
+            "27877.5",
+            "3.53%",
+            "0.0006%",
+            "226,958,862",
+            "696,517,612"
+          ]
+        ]
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "thresholds": {
+      "type": "Text",
+      "props": {
+        "text": "Thresholds: 24h move ≥ 0.5% or hourly funding ≥ 0.0001%. Read-only.",
+        "variant": "muted"
+      },
+      "children": []
+    }
+  }
+}

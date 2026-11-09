@@ -1,15 +1,21 @@
 {
   "skill": "hyperliquid-market-monitor",
-  "last_analyzed": "2026-11-09T17:15:42Z",
-  "quality_score": 1,
-  "assessment": "The watch never ran: the helper invocation was refused by the permission layer, so there is no verdict, log, or notification. The report is honest and gives clear next steps, but it delivers no monitoring result.",
+  "last_analyzed": "2026-11-09T17:17:16Z",
+  "quality_score": 3,
+  "assessment": "Completes the watch task: all five perps are listed with the stated thresholds, and each 24h move and funding figure crosses them. It omits timestamps and any indication of which crossings are new, and the figures cannot be verified from the output alone.",
   "flags": [],
-  "avg_score": 1,
+  "avg_score": 2,
   "history": [
     {
       "date": "2026-11-09",
       "score": 1,
       "ts": "2026-11-09T17:15:42Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-09",
+      "score": 3,
+      "ts": "2026-11-09T17:17:16Z",
       "harness": "claude"
     }
   ]
