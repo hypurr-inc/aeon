@@ -1,0 +1,260 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperliquid Account Brief",
+        "description": "Read-only account brief"
+      },
+      "children": [
+        "main"
+      ]
+    },
+    "main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "h_brief",
+        "acct_text",
+        "grid_top",
+        "hold_text",
+        "pool_note",
+        "sep1",
+        "h_positions",
+        "tbl_positions",
+        "sep2",
+        "h_orders",
+        "txt_orders",
+        "sep3",
+        "h_24h",
+        "grid_24h",
+        "sep4",
+        "footer"
+      ]
+    },
+    "h_brief": {
+      "type": "Heading",
+      "props": {
+        "text": "Hyperliquid brief",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "acct_text": {
+      "type": "Text",
+      "props": {
+        "text": "Account: 0xdf9ea6ec3b7109935ccb4fb267e15ac1fb077ab1 · mode unified-account",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "grid_top": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_usdc",
+        "stat_margin",
+        "stat_notional",
+        "stat_positions",
+        "stat_spot"
+      ]
+    },
+    "stat_usdc": {
+      "type": "Stat",
+      "props": {
+        "label": "USDC balance",
+        "value": "1,171,062.90 USDC"
+      },
+      "children": []
+    },
+    "stat_margin": {
+      "type": "Stat",
+      "props": {
+        "label": "Default-dex margin used",
+        "value": "148,776.07 USDC"
+      },
+      "children": []
+    },
+    "stat_notional": {
+      "type": "Stat",
+      "props": {
+        "label": "Default-dex notional",
+        "value": "1,487,760.74 USDC"
+      },
+      "children": []
+    },
+    "stat_positions": {
+      "type": "Stat",
+      "props": {
+        "label": "Positions (all dexes)",
+        "value": "1"
+      },
+      "children": []
+    },
+    "stat_spot": {
+      "type": "Stat",
+      "props": {
+        "label": "Spot balances",
+        "value": "34"
+      },
+      "children": []
+    },
+    "hold_text": {
+      "type": "Text",
+      "props": {
+        "text": "USDC hold: 148,776.07",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "pool_note": {
+      "type": "Alert",
+      "props": {
+        "title": "Pooled collateral",
+        "message": "This account pools collateral: balances live in the spot state, so no equity or withdrawable figure is reported here.",
+        "type": "info"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "h_positions": {
+      "type": "Heading",
+      "props": {
+        "text": "Positions",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "tbl_positions": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Asset",
+          "Side",
+          "Size",
+          "Entry",
+          "Value",
+          "uPnL",
+          "Liq price",
+          "Leverage"
+        ],
+        "rows": [
+          [
+            "HYPE",
+            "short",
+            "20000.01",
+            "25.9443",
+            "1,487,760.74",
+            "-968,873.09",
+            "126.6105864463",
+            "10x cross"
+          ]
+        ]
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "h_orders": {
+      "type": "Heading",
+      "props": {
+        "text": "Open orders",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "txt_orders": {
+      "type": "Text",
+      "props": {
+        "text": "none",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "h_24h": {
+      "type": "Heading",
+      "props": {
+        "text": "Last 24h (since 2026-11-08T18:22:21Z)",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "grid_24h": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_fills",
+        "stat_pnl",
+        "stat_fees"
+      ]
+    },
+    "stat_fills": {
+      "type": "Stat",
+      "props": {
+        "label": "Fills",
+        "value": "0"
+      },
+      "children": []
+    },
+    "stat_pnl": {
+      "type": "Stat",
+      "props": {
+        "label": "Realized PnL",
+        "value": "0.00 USDC"
+      },
+      "children": []
+    },
+    "stat_fees": {
+      "type": "Stat",
+      "props": {
+        "label": "Fees",
+        "value": "0.00 USDC"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "footer": {
+      "type": "Text",
+      "props": {
+        "text": "Read-only. Every number comes from the Hyperliquid API; the account is unchanged.",
+        "variant": "caption"
+      },
+      "children": []
+    }
+  }
+}

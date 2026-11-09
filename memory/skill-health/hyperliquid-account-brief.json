@@ -1,8 +1,8 @@
 {
   "skill": "hyperliquid-account-brief",
-  "last_analyzed": "2026-11-09T17:45:59Z",
+  "last_analyzed": "2026-11-09T18:22:57Z",
   "quality_score": 3,
-  "assessment": "Figures are internally consistent (10x cross margin matches notional, uPnL matches entry and mark), but the report omits the required equity and withdrawable figures, citing unified-account mode instead.",
+  "assessment": "Accurate and internally consistent (10x cross margin matches 148,776 margin on 1.49M notional; uPnL matches the entry/mark gap), with liq price and 24h figures reported. It omits the equity and withdrawable figures the skill is meant to report, though it explains that unified-account mode doesn't expose them.",
   "flags": [],
   "avg_score": 3,
   "history": [
@@ -16,6 +16,12 @@
       "date": "2026-11-09",
       "score": 3,
       "ts": "2026-11-09T17:45:59Z",
+      "harness": "claude"
+    },
+    {
+      "date": "2026-11-09",
+      "score": 3,
+      "ts": "2026-11-09T18:22:57Z",
       "harness": "claude"
     }
   ]
