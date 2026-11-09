@@ -1,0 +1,16 @@
+{
+  "skill": "hyperliquid-account-brief",
+  "last_analyzed": "2026-11-09T17:17:21Z",
+  "quality_score": 3,
+  "assessment": "Well-structured and covers most of the brief (balances, margin, position with uPnL and liquidation, open orders, 24h PnL and fees), but it never states withdrawable balance explicitly and leaves the relation between the -987,933 uPnL and the 591,987 account value unexplained, so it is only partly complete.",
+  "flags": [],
+  "avg_score": 3,
+  "history": [
+    {
+      "date": "2026-11-09",
+      "score": 3,
+      "ts": "2026-11-09T17:17:21Z",
+      "harness": "claude"
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperliquid brief"
+      },
+      "children": [
+        "caption",
+        "account",
+        "sep1",
+        "balGrid",
+        "alert",
+        "sep2",
+        "posHeading",
+        "posTable",
+        "sep3",
+        "ordHeading",
+        "ordText",
+        "sep4",
+        "dayHeading",
+        "dayGrid",
+        "sep5",
+        "footer",
+        "readonlyBadge"
+      ]
+    },
+    "caption": {
+      "type": "Text",
+      "props": {
+        "text": "ℹ️ Hyperliquid account brief",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "account": {
+      "type": "Text",
+      "props": {
+        "text": "Account: 0xdf9ea6ec3b7109935ccb4fb267e15ac1fb077ab1 · mode unifiedAccount",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "balGrid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "usdc",
+        "perpMargin",
+        "perpValue",
+        "notional",
+        "posCount",
+        "spotCount"
+      ]
+    },
+    "usdc": {
+      "type": "Stat",
+      "props": {
+        "label": "USDC balance (hold 150,682.08)",
+        "value": "1,152,023.24"
+      },
+      "children": []
+    },
+    "perpMargin": {
+      "type": "Stat",
+      "props": {
+        "label": "Perp margin used",
+        "value": "150,682.08 USDC"
+      },
+      "children": []
+    },
+    "perpValue": {
+      "type": "Stat",
+      "props": {
+        "label": "Perp account value",
+        "value": "591,987.04"
+      },
+      "children": []
+    },
+    "notional": {
+      "type": "Stat",
+      "props": {
+        "label": "Notional",
+        "value": "1,506,820.75 USDC"
+      },
+      "children": []
+    },
+    "posCount": {
+      "type": "Stat",
+      "props": {
+        "label": "Positions",
+        "value": "1"
+      },
+      "children": []
+    },
+    "spotCount": {
+      "type": "Stat",
+      "props": {
+        "label": "Spot balances",
+        "value": "34"
+      },
+      "children": []
+    },
+    "alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Pooled collateral",
+        "message": "This account pools collateral: balances live in the spot state, so the perp account value (591,987.04) is only part of the picture.",
+        "type": "info"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "posHeading": {
+      "type": "Heading",
+      "props": {
+        "text": "Positions",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "posTable": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Asset",
+          "Side",
+          "Size",
+          "Entry",
+          "Value",
+          "uPnL",
+          "Liq price",
+          "Leverage",
+          "Margin"
+        ],
+        "rows": [
+          [
+            "HYPE",
+            "Short",
+            "20000.01",
+            "25.9443",
+            "1,506,820.75",
+            "-987,933.10",
+            "126.6115553539",
+            "10x cross",
+            "150,682.08"
+          ]
+        ]
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "ordHeading": {
+      "type": "Heading",
+      "props": {
+        "text": "Open orders",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "ordText": {
+      "type": "Text",
+      "props": {
+        "text": "none",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "dayHeading": {
+      "type": "Heading",
+      "props": {
+        "text": "Last 24h (since 2026-11-08T17:17:06Z)",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "dayGrid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "fills",
+        "realized",
+        "fees"
+      ]
+    },
+    "fills": {
+      "type": "Stat",
+      "props": {
+        "label": "Fills",
+        "value": "0"
+      },
+      "children": []
+    },
+    "realized": {
+      "type": "Stat",
+      "props": {
+        "label": "Realized PnL",
+        "value": "0.00 USDC"
+      },
+      "children": []
+    },
+    "fees": {
+      "type": "Stat",
+      "props": {
+        "label": "Fees",
+        "value": "0.00 USDC"
+      },
+      "children": []
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "footer": {
+      "type": "Text",
+      "props": {
+        "text": "Read-only. Every number comes from the Hyperliquid API; the account is unchanged.",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "readonlyBadge": {
+      "type": "Badge",
+      "props": {
+        "text": "Read-only",
+        "variant": "outline"
+      },
+      "children": []
+    }
+  }
+}
