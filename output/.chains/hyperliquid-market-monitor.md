@@ -1,18 +1,22 @@
-## Hyperliquid watch: no new alerts
+**Verdict: `HL_WATCH_REPEAT`.** Every market is still past a threshold, but all of them were already reported by the previous run, so I did not send a notification.
 
-**Verdict:** `HL_WATCH_REPEAT`. Several markets are still past a threshold, but the previous run already reported every one of them, so I did not send a notification.
+Watch: `BTC,ETH,SOL,HYPE` with `move>=0.5%` and `funding>=0.0001%/h`. I passed the watch string as arguments because this run does not export `SKILL_VAR`.
 
-**Log line:**
+Current hits, all repeats (`new=0`):
+- BTC: 24h move down, funding positive
+- ETH: 24h move down, funding positive
+- SOL: 24h move down, funding negative
+- HYPE: 24h move down, funding negative
+
+No unknown coins and no unreadable markets.
+
 ```
-HL_WATCH coins=BTC,ETH,SOL,HYPE,xyz:XYZ100 hits=BTC:move-,BTC:fund+,ETH:move-,ETH:fund+,SOL:move-,SOL:fund-,HYPE:move-,HYPE:fund-,xyz:XYZ100:move+,xyz:XYZ100:fund+ new=0 unknown=0 unreadable=0 move>=0.5 funding>=0.0001/h
+HL_WATCH coins=BTC,ETH,SOL,HYPE hits=BTC:move-,BTC:fund+,ETH:move-,ETH:fund+,SOL:move-,SOL:fund-,HYPE:move-,HYPE:fund- new=0 unknown=0 unreadable=0 move>=0.5 funding>=0.0001/h
 ```
 
-**Notification sent:** no.
-
-**Watch settings used:** coins `BTC,ETH,SOL,HYPE,xyz:XYZ100`, `move=0.5` (absolute 24h move in %), `funding=0.0001` (absolute hourly funding in %). The `xyz:XYZ100` market is a HIP-3 perp and resolved with no unknown or unreadable markets.
+Notification sent: no.
 
 ## Summary
-
-- **Ran:** `node skills/hyperliquid-market-monitor/x.mjs BTC,ETH,SOL,HYPE,xyz:XYZ100 move=0.5 funding=0.0001`. I passed the watch string as arguments rather than relying on `SKILL_VAR`.
-- **Files created or modified:** none. This is a read-only skill, and I did not write to `memory/logs/`.
-- **Follow-up:** none. The next run will alert again only for thresholds that newly cross or drop back under and re-cross.
+- Read `skills/hyperliquid-market-monitor/SKILL.md` and ran `node skills/hyperliquid-market-monitor/x.mjs BTC,ETH,SOL,HYPE move=0.5 funding=0.0001`.
+- Created or modified no files. The run is read-only, and no `memory/logs/` entry was written, as the skill specifies.
+- Follow-up: none. The threshold settings are looser than the skill defaults (`move=5`, `funding=0.01`), so this watch will keep reporting the same hits until they clear or a new crossing appears.
