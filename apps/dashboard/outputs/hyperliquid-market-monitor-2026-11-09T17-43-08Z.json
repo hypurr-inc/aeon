@@ -1,0 +1,81 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "Hyperliquid watch"
+      },
+      "children": [
+        "grid",
+        "sep",
+        "thresholds",
+        "readonly"
+      ]
+    },
+    "grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 2,
+        "gap": "md"
+      },
+      "children": [
+        "hype",
+        "funding",
+        "oi",
+        "vol"
+      ]
+    },
+    "hype": {
+      "type": "Stat",
+      "props": {
+        "label": "HYPE",
+        "value": "74.395",
+        "delta": "-2.71% (24h)",
+        "trend": "down"
+      }
+    },
+    "funding": {
+      "type": "Stat",
+      "props": {
+        "label": "Funding (hourly)",
+        "value": "-0.001%/h"
+      }
+    },
+    "oi": {
+      "type": "Stat",
+      "props": {
+        "label": "Open Interest",
+        "value": "1,613,240,620 USDC"
+      }
+    },
+    "vol": {
+      "type": "Stat",
+      "props": {
+        "label": "24h Volume",
+        "value": "699,613,549 USDC"
+      }
+    },
+    "sep": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "thresholds": {
+      "type": "Text",
+      "props": {
+        "text": "Thresholds: 24h move ≥ 0.5% or hourly funding ≥ 0.0001%.",
+        "variant": "body"
+      }
+    },
+    "readonly": {
+      "type": "Text",
+      "props": {
+        "text": "Read-only.",
+        "variant": "muted"
+      }
+    }
+  }
+}
