@@ -1,0 +1,2 @@
+date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
+2026-11-09,hyperliquid-market-monitor,claude-haiku-5-5,10,2417,114016,29841
